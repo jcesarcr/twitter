@@ -23,6 +23,7 @@ func ChequeoYaExisteUsuario(email string) (models.Usuario, bool, string) {
 	ID := resultado.ID.Hex()
 
 	if err != nil {
+
 		return resultado, false, ID
 	}
 	return resultado, true, ID
